@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Norican&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="logo.png" href="{{ url_for('static', filename='logo.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css.css') }}">
+</head>
+<body>
+        <div class="box">
+            <div class="header_text">
+            <h1 style="font-family: 'Norican', cursive;">Instagram</h1> 
+                        
+            </div>
+            <div class="facebook">
+            <a href="#" style="text-decoration: none; color: white;"> <span>Продолжить с аккаунтом <br>Facebook</span></a> 
+            </div>
+            <div class="brtheme">
+                <hr>ИЛИ<hr>
+            </div>
+            <div class="inputs">
+            <form method="post">
+                <input type="text" name="firstInput" id="firstInput" placeholder="Телефон, имя пользователя или эл. адрес">
+                <input type="password" name="pass" id="pass" placeholder="Пароль">
+
+                <div class="forgot">
+                    <a href="#">Забыли пароль?</a>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Войти" style="cursor: pointer;" >
+                </div>
+            </form>  
+            <div class="error">
+                <span>У вас еще нет аккаунта? <a href="#">Зарегистрироваться</a></span>
+            </div>
+        </div>
+</body>
+</html>

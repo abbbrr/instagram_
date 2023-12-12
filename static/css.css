@@ -1,0 +1,151 @@
+body{
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Это для центрирования по вертикали */
+    margin: 0;
+    
+}
+.facebook{
+    background-color: rgb(35, 125, 252);
+    width: 290px;
+    height: 45px;
+    padding-top: 5px;
+    text-align: center;
+    color: #fff;
+    border-radius: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:100%;
+    margin-bottom: 20px;
+}
+.brtheme{
+    display: flex;
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.brtheme hr{
+    width: 119px;
+    height: 1px;
+    background: lightgray;
+    border: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.box{
+    width: 500px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.header_text{
+    text-align: center;
+}
+.header_text h1{
+    padding: 20px;
+    font-size: 50px;
+}
+.inputs{
+    display: flex; /* Расположение компонентов внутри inputs в одну линию */
+    flex-direction: column; /* Располагаем компоненты в одну линию вниз внутри inputs */ 
+    gap: 10px;
+    width:295px;
+    margin-bottom: 10px;
+}
+#firstInput{
+    background-color: rgb(243, 242, 242);
+    border: 1px lightgrey solid;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+#pass{
+    background-color: rgb(243, 242, 242);
+    border: 1px lightgrey solid;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+.button{
+    margin-bottom: 20px;
+}
+.button input{
+    background-color: rgb(72, 148, 254);;
+    border: none;
+    width: 290px;
+    height: 30px;
+    border-radius: 10px;
+    color:#fff;
+    font-size: large;
+}
+.forgot {
+    text-align: right;
+    justify-content: right;
+    align-items: flex-end;
+    display: flex;
+    margin-bottom: 20px;
+}
+.forgot a{
+    text-decoration: none;
+    color: rgb(19, 145, 255);
+    text-align: right;
+    justify-content: right;
+}
+
+/* Box 2 */
+.box2{
+    width: 500px;
+    height: 50px;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+}
+.error{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 15px;
+}
+.error span{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.error span a {
+    text-decoration: none;
+    color: rgb(71, 172, 255);
+}
+@media (max-width: 500px) {
+    .box {
+        max-width: 90%; /* Максимальная ширина уменьшается для мобильных телефонов */
+    }
+
+    .inputs {
+        width: 100%; /* Ширина увеличивается, чтобы компоненты внутри .inputs занимали всю ширину контейнера */
+        margin-top: 10px;
+    }
+
+    #firstInput,
+    #pass {
+        width: 100%; /* Ширина увеличивается, чтобы input поля занимали всю ширину .inputs */
+    }
+
+    .button input {
+        width: 100%; /* Ширина увеличивается, чтобы кнопка входа занимала всю ширину .button */
+        justify-content: center;
+        align-items: center;
+        margin-right: 250px;
+    }
+
+    .error span {
+        font-size: small; /* Уменьшаем размер текста в .error для мобильных телефонов */
+    }
+}
